@@ -6,13 +6,77 @@ clc
 clear
 load('WaterUseData(3)')
 figure(1)
+
 plot(Year, Amount)
 grid
-xlabel('Year, ppm')
-ylabel('Amount,C')
-title('Amount of Water USed per year')
-hold on
+xlabel('Year')
+ylabel('Amount in Bgal/D or Millions')
+title('Amount of Water Used per year')
 
-P = polyfit(Year,Amount,1)
-F = polyval(P, Year)
-plot(Year,F)
+infoButtons = input('Press a key 1-15 to view different graphs')
+if
+    infoButtons = 1
+end
+if
+    infoButtons = 2
+end
+if
+    infoButtons = 3
+end
+if
+    infoButtons = 4
+end
+if
+    infoButtons = 5
+end
+if
+    infoButtons = 6
+end
+if
+    infoButtons = 7
+end
+if
+    infoButtons = 8
+end
+if
+    infoButtons = 9
+end
+if
+    infoButtons = 10
+end
+if
+    infoButtons = 11
+end
+if
+    infoButtons = 12
+end
+if
+    infoButtons = 13
+end
+if
+    infoButtons = 14
+end
+if
+    infoButtons = 15
+end
+plot(AquacultureinBgald,Year)
+plot( CommercialinBgald,Year)
+plot(IrrigationinBgald,Year)
+plot( LivestockinBgald,Year) ​ 
+plot( MiningInBgald,Year)
+plot(Populationinmillions,Year) 
+plot(PublicsupplyinBgald,Year)​
+plot(SelfsupplieddomesticinBgald​,Year)
+plot(SelfsuppliedindustrialinBgald,Year) ​
+plot(ThermoelectricpowerinBgald,Year)
+plot(TotalGroundwaterfreshinBgald,Year) 
+plot(TotalGroundwatersalineinBgald​,Year)
+plot(TotalSurfacewaterfreshinBgald,Year) 
+plot(TotalSurfacewatersalineinBgald,Year)  
+plot(TotalwithdrawalsinBgald,Year) 
+ 
+ 
+ 
+ 
+ 
+ 
