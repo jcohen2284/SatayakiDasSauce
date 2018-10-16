@@ -5,8 +5,8 @@
 clc
 clear
  load('WaterUseData(3)')
-while 1==1
-infoButtons = input('Press a key 1-15 to view different graphs');
+while input('Type 0 twice to end Program, Or, Press any other key') ~= 0
+infoButtons = input('Press a key 1-15 twice to view different graphs');
 if infoButtons == 1
  plot(Year,AquacultureinBgald)
 figure(1)
@@ -149,6 +149,16 @@ end
 
 
 
+
+
+
+
+
+ 
+ 
+ 
+ 
+ 
 
 
 
