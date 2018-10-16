@@ -1,16 +1,18 @@
 # Module 2: Data & Modeling
-Code for ENGE 1215: SustainingKnocksonOurKnees
+%ENGE1215 Mon/Wed 11:15 10/16/18
+%Code for ENGE 1215: SustainingKnocksonOurKnees
+%Purpose Statement: Analyize USGS Water Use Data
 clc
 clear
-load('CommutingMethods(3)')
+load('WaterUseData(3)')
 figure(1)
-plot(CO2, Temp)
+plot(Year, Amount)
 grid
-xlabel('CO2, ppm')
-ylabel('Temperature,C')
-title('CO2 affecting the Temperature')
+xlabel('Year, ppm')
+ylabel('Amount,C')
+title('Amount of Water USed per year')
 hold on
 
-P = polyfit(CO2,Temp,1)
-F = polyval(P, CO2)
-plot(CO2,F)
+P = polyfit(Year,Amount,1)
+F = polyval(P, Year)
+plot(Year,F)
