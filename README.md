@@ -4,72 +4,143 @@
 %Purpose Statement: Analyize USGS Water Use Data
 clc
 clear
-load('WaterUseData(3)')
+ load('WaterUseData(3)')
+while 1==1
+infoButtons = input('Press a key 1-15 to view different graphs');
+if infoButtons == 1
+ plot(Year,AquacultureinBgald)
 figure(1)
 grid
 xlabel('Year')
 ylabel('Amount in Bgal/D or Millions')
 title('Amount of Water Used per year')
-
-infoButtons = input('Press a key 1-15 to view different graphs')
-if infoButtons == 1
- plot(AquacultureinBgald,Year)
 end
 
 if infoButtons == 2
- plot( CommercialinBgald,Year)
+ plot(Year,CommercialinBgald)
+figure(1)
+grid
+xlabel('Year')
+ylabel('Amount in Bgal/D or Millions')
+title('Amount of Water Used per year')
 end
 
 if infoButtons == 3
- plot(IrrigationinBgald,Year)
+ plot(Year,IrrigationinBgald)
+figure(1)
+grid
+xlabel('Year')
+ylabel('Amount in Bgal/D or Millions')
+title('Amount of Water Used per year')
 end
 
 if infoButtons == 4
- plot( LivestockinBgald,Year) ​ 
+ plot(Year,LivestockinBgald) 
+figure(1)
+grid
+xlabel('Year')
+ylabel('Amount in Bgal/D or Millions')
+title('Amount of Water Used per year')
 end
 
 if infoButtons == 5
- plot(Populationinmillions,Year) 
+ plot(Year,Populationinmillions) 
+figure(1)
+grid
+xlabel('Year')
+ylabel('Amount in Bgal/D or Millions')
+title('Amount of Water Used per year')
 end
 
 if infoButtons == 6
- plot( MiningInBgald,Year)​
+ plot(Year,MiningInBgald)
+figure(1)
+grid
+xlabel('Year')
+ylabel('Amount in Bgal/D or Millions')
+title('Amount of Water Used per year')
 end
 
 if infoButtons == 7
- plot(PublicsupplyinBgald,Year)
+ plot(Year,PublicsupplyinBgald)
+figure(1)
+grid
+xlabel('Year')
+ylabel('Amount in Bgal/D or Millions')
+title('Amount of Water Used per year')
 end
 
 if infoButtons == 8
- plot(SelfsupplieddomesticinBgald​,Year)
+ plot(Year,SelfsupplieddomesticinBgald)
+figure(1)
+grid
+xlabel('Year')
+ylabel('Amount in Bgal/D or Millions')
+title('Amount of Water Used per year')
 end
 
 if infoButtons == 9
- plot(SelfsuppliedindustrialinBgald,Year) ​
+ plot(Year,SelfsuppliedindustrialinBgald)
+figure(1)
+grid
+xlabel('Year')
+ylabel('Amount in Bgal/D or Millions')
+title('Amount of Water Used per year')
 end
 
 if infoButtons == 10
- plot(ThermoelectricpowerinBgald,Year)
+ plot(Year,ThermoelectricpowerinBgald)
+figure(1)
+grid
+xlabel('Year')
+ylabel('Amount in Bgal/D or Millions')
+title('Amount of Water Used per year')
 end
 
 if infoButtons == 11
-  plot(TotalGroundwaterfreshinBgald,Year) 
+  plot(Year,TotalGroundwaterfreshinBgald) 
+ figure(1)
+grid
+xlabel('Year')
+ylabel('Amount in Bgal/D or Millions')
+title('Amount of Water Used per year')
 end
 
 if infoButtons == 12
- plot(TotalGroundwatersalineinBgald​,Year)
+ plot(Year,TotalGroundwatersalineinBgald)
+figure(1)
+grid
+xlabel('Year')
+ylabel('Amount in Bgal/D or Millions')
+title('Amount of Water Used per year')
 end
 
 if infoButtons == 13
- plot(TotalSurfacewaterfreshinBgald,Year) 
+ plot(Year,TotalSurfacewaterfreshinBgald) 
+figure(1)
+grid
+xlabel('Year')
+ylabel('Amount in Bgal/D or Millions')
+title('Amount of Water Used per year')
 end
 
 if infoButtons == 14
- plot(TotalSurfacewatersalineinBgald,Year)
+ plot(Year,TotalSurfacewatersalineinBgald)
+ figure(1)
+grid
+xlabel('Year')
+ylabel('Amount in Bgal/D or Millions')
+title('Amount of Water Used per year')
 end
 
 if infoButtons == 15
-plot(TotalwithdrawalsinBgald,Year)
+plot(Year,TotalwithdrawalsinBgald)
+figure(1)
+grid
+xlabel('Year')
+ylabel('Amount in Bgal/D or Millions')
+title('Amount of Water Used per year')
+end
 end
 
 
@@ -83,7 +154,7 @@ end
 
 
 
-
+ 
  
  
  
